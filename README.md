@@ -12,7 +12,7 @@ It works with a database (MongoDB) to store the articles and to store the user i
 
 ### Credits
 
-I believe I was inspired by this nice tutorial which helps (and provides code for) the basic communication Facebook expects. So thanks [@jw84](https://github.com/jw84/) Jerry Wang and your [Messenger bot tutorial](https://github.com/jw84/messenger-bot-tutorial)!
+I believe I was inspired by [this nice tutorial](https://github.com/jw84/messenger-bot-tutorial) which helps (and provides code for) the basic communication Facebook expects. So thanks [@jw84](https://github.com/jw84/) Jerry Wang and your [Messenger bot tutorial](https://github.com/jw84/messenger-bot-tutorial)!
 
 Go there for the basics. Come back here once that is not enough. 
 
@@ -20,10 +20,10 @@ Go there for the basics. Come back here once that is not enough.
 
 ### TODO
 
-[x] Update the README
-[x] Include information on the server-side setup and hosting
-[ ] Add screenshots
-[ ] Make it works with a free news source and publish it so that people actually believe me
+- [x] Update the README
+- [x] Include information on the server-side setup and hosting
+- [ ] Add screenshots
+- [ ] Make it works with a free news source and publish it so that people actually believe me
 
 ## 🛠 Instructions
 
