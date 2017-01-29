@@ -8,7 +8,7 @@ I was fun but it took me about 20 hours so I thought it would be nice to share w
 
 It works with a database (MongoDB) to store the articles and to store the user information. Users could then choose whether they want to receive a daily message (much like a push notification but inside the Messenger) and this would be stored in the database.
 
-Note: I did build that bot but I cannot exactly just publish it as open source. Hence this generic version of what I've created with the same fun levels.
+*Note:* I did build that bot but I cannot exactly just publish it as open source. Hence this generic version of what I've created with the same fun levels.
 
 ### Credits
 
@@ -49,7 +49,7 @@ _I use this test file to manually test parts of the bot since deploying it and t
 
 ### Hosting it
 
-I have DigitalOcean VPS with Ubuntu and Apache running. I run the Node server and use proxy setting in vhost file to make it appear under HTTPS domain like Facebook wants it. Here's the vhost file:
+I have [DigitalOcean](https://m.do.co/c/cb8d36856617) with Ubuntu and Apache running. I run the Node server and use proxy setting in vhost file to make it appear under HTTPS domain like Facebook wants it. Here's the vhost file:
 
 ```
 <IfModule mod_ssl.c>
@@ -75,7 +75,7 @@ I use [`pm2`](http://pm2.keymetrics.io) to run it on the server. Nice little too
 
 ### Continuous delivery
 
-I use Codeship. There are no tests to run so that's easy. Here's the custom script I use to actually move the files to the server and restart the app.
+I use [Codeship](https://codeship.com). There are no tests to run so that's easy. Here's the custom script I use to actually move the files to the server and restart the app.
 
 ```
 rsync -avz -e "ssh" ~/clone/ root@44.55.66.77:/var/www/chatbot/
@@ -83,4 +83,12 @@ ssh root@44.55.66.77 'pm2 restart /var/www/chatbot/index.js'
 ```
 
 Codeship, of course, picks up the changes from master branch of GitHub repo. Or whatever you configure it to.
+
+## Work In Progress
+
+This is very much work in progress. You need to add your own config, tokens, and even the news source. Adjust and update all needed places in code and then you can have a working bot. It is just supposed to be saving you time. However, I'll try to bring this to as close as possible to a functional bot.
+
+Feel free to create issues, pull requests or just tweet at me [@faster](https://www.twitter.com/faster).
+
+Have fun! 🕺
 
